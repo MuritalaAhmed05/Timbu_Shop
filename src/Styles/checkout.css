@@ -1,0 +1,215 @@
+.checkout-form {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+}
+.first-p {
+  margin: 20px 0px 0px 20px;
+  font-size: 18px;
+}
+.checkout-container {
+  display: flex;
+}
+.delivery-section,
+.card-details-section {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.card-details-section {
+  margin-right: 20px;
+}
+
+.delivery-section p,
+.card-details-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+input:focus,
+select:focus {
+  border: 1px solid blue;
+}
+
+.name-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-fields input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.name-fields input:last-child {
+  margin-right: 0;
+}
+
+.city-state-zip {
+  display: flex;
+  justify-content: space-between;
+}
+
+.city-state-zip input,
+.city-state-zip select {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.city-state-zip input:last-child,
+.city-state-zip select:last-child {
+  margin-right: 0;
+}
+
+.phone-field {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.phone-field span {
+  display: flex;
+  align-items: center;
+  margin: 0px 5px;
+}
+.phone-field input {
+  border: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.flag-icon {
+  width: 50px;
+  height: auto;
+}
+
+.expiry-cvv-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expiry-cvv-fields input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.expiry-cvv-fields input:last-child {
+  margin-right: 0;
+}
+
+.pay-now-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-now-button:hover {
+  background-color: #0056b3;
+}
+
+.card-details-section {
+  display: flex;
+}
+.card-detail {
+  flex: 3;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: #fff;
+}
+.empty {
+  flex: 1;
+
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+
+  margin-right: 20px;
+}
+
+.order-summary {
+  flex: 1;
+  margin: 20px 20px 0px 0px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 190px;
+}
+
+.order-summary p {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.summary-item p {
+  font-size: 14px;
+}
+
+.summary-item.total p {
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .empty {
+    display: none;
+  }
+
+  .order-summary {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .name-fields,
+  .city-state-zip,
+  .expiry-cvv-fields {
+    flex-direction: column;
+  }
+
+  .name-fields input,
+  .city-state-zip input,
+  .city-state-zip select,
+  .expiry-cvv-fields input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .name-fields input:last-child,
+  .city-state-zip input:last-child,
+  .city-state-zip select:last-child,
+  .expiry-cvv-fields input:last-child {
+    margin-bottom: 0;
+  }
+  .checkout-container {
+    flex-direction: column;
+  }
+  .order-summary {
+    margin-left: 20px;
+  }
+}

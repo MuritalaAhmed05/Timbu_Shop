@@ -1,0 +1,69 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #000000;
+  border-top: 1px solid #ddd;
+  color: white;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer div a {
+  display: block;
+  margin: 12px 0;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+
+  font-size: 14px;
+}
+.social p,
+.customer-care p,
+.legal p {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.info span {
+  font-family: rochester;
+  margin-left: 15px;
+  font-size: 30px;
+}
+.info p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.img_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cap {
+  width: 47px;
+  height: 47px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .info p {
+    font-size: 12px;
+    max-width: 200px;
+    line-height: 1.5;
+  }
+  .info span {
+    font-size: 16px;
+  }
+  .social {
+    font-size: 12px;
+  }
+}
